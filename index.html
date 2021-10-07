@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    
+    <title>3 en raya</title>
+</head>
+<body>
+    <div id="select-game" class="wrapper-game">
+        <h1 id="selectgm">Select gamemode</h1> 
+        <div id="singleplayer">
+            <button id="spb">Singleplayer</button>
+        </div>
+        <div id="multiplayer">
+            <button id="mpb">Multiplayer</button>
+        </div>
+    </div>
+    <div class="wrapper"> 
+        <header id="scoreboard" class="oculto">
+            <table>
+                <thead>
+                    <tr>
+                        <th><h3 id="player1"></h3></th>
+                        <th><h3>-</h3></th>
+                        <th><h3 id="player2"></h3></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><h3 id="player1-score">0</h3></th>
+                        <th><h3>-</h3></th>
+                        <th><h3 id="player2-score">0</h3></th>
+                    </tr>
+                </tbody>
+            </table>
+        </header>
+        <article id="gb" class="oculto">
+            <table id="gameboard">
+                <thead>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>A</th>
+                        <td id="a1"></td>
+                        <td id="a2"></td>
+                        <td id="a3"></td>
+                    </tr>
+                    <tr>
+                        <th>B</th>
+                        <td id="b1"></td>
+                        <td id="b2"></td>
+                        <td id="b3"></td>
+                    </tr>
+                    <tr>
+                        <th>C</th>
+                        <td id="c1"></td>
+                        <td id="c2"></td>
+                        <td id="c3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article id="stats_a" class="oculto">
+            <table id="stats_table">
+                <thead>
+                    <th>Round</th>
+                    <th>Winner</th>
+                    <th id="player1_name_moves"></th>
+                    <th id="player2_name_moves"></th>
+                </thead>
+                <tbody id="body_stats">
+
+                </tbody>
+            </table>
+        </article>
+        <aside id="dashboard" class="oculto">
+            <h3>Movimientos</h3>
+            <ol id="list">
+            </ol>
+        </aside>
+        <footer id="end">
+            <h2 id="wl" class="oculto"></h2>
+            <button id="reset" class="oculto" hidden>Reset</button>
+            <button id="reset2" class="oculto" hidden>Restart</button>
+            <button id="stats" class="oculto">Show stats</button>
+        </footer>
+        
+    </div>
+    <script src="controller.js"></script>
+</body>
+</html>

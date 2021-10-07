@@ -1,0 +1,98 @@
+#stats-table {
+    border: 1px solid black;
+}
+
+#gb td {
+    border: 1px solid black;
+    padding: 8vh;
+}
+
+#gb th {
+    padding: 4vh;
+}
+
+#list {
+    list-style: none;
+}
+
+.oculto {
+    display: none;
+}
+
+.circulo {
+    background-image: url(img/circulo.png);
+    background-repeat: round;
+}
+
+.x {
+    background-image: url(img/X.png);
+    background-repeat: round;
+}
+
+#gameboard {
+    grid-area: content;
+}
+
+#dashboard {
+    grid-area: sidebar;
+    text-align: center;
+}
+
+#scoreboard {
+    grid-area: header;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#end {
+    grid-area: footer;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer"
+    ;
+}
+
+#selectgm {
+    grid-area: header2;
+    text-align: center;
+}
+
+#singleplayer {
+    grid-area: sidebar2;
+    text-align: center;
+}
+
+#multiplayer {
+    grid-area: content2;
+    text-align: center;
+}
+
+.wrapper-game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header2 header2"
+        "sidebar2 content2"
+    ;
+}
+
+button {
+    border-radius: 5px;
+    padding: 1vh;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+#stats_table, #stats_table td, #stats_table th {
+    border-collapse: collapse;
+    border: 1px solid  #000;
+    padding: 0.8vh;
+    text-align: center;
+}
+
